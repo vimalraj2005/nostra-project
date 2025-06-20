@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nostra-Contact</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav
+      class="fixed top-0 left-0 right-0 z-50 bg-white shadow-md px-4 py-3 flex justify-between items-center"
+    >
+      <h2 class="text-3xl font-bold">Nostra</h2>
+
+      <!-- Hamburger Button -->
+      <div class="md:hidden text-3xl cursor-pointer" id="menu-toggle">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <div
+        id="mobileMenu"
+        class="fixed top-0 right-0 h-full w-3/4 max-w-xs bg-gray-900 text-white transform translate-x-full transition-transform duration-300 ease-in-out flex flex-col gap-6 px-6 py-8 md:hidden z-50"
+      >
+        <!-- Close Button -->
+        <div class="text-right text-3xl mb-4 cursor-pointer" id="close-btn">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <a href="index.html" class="text-lg hover:underline">Home</a>
+
+        <a href="collection.html" class="text-lg hover:underline">Collections</a>
+        <a href="contact.html" class="text-lg hover:underline">Contact Us</a>
+      </div>
+
+      <!-- Desktop Links -->
+      <div class="hidden md:flex gap-12 text-[#1D232C] font-semibold">
+        <a href="index.html" class="hover:underline">Home</a>
+
+        <a href="collection.html" class="hover:underline">Collections</a>
+        <a href="contact.html" class="hover:underline">Contact Us</a>
+      </div>
+    </nav>
+
+    <section class="bg-white dark:bg-gray-900">
+      <div class="py-20 lg:py-16 px-4 mx-auto max-w-screen-md">
+        <h2
+          class="mb-4 text-4xl tracking-tight font-extrabold text-center text-gray-900 dark:text-white"
+        >
+          Contact Us
+        </h2>
+        <p
+          class="mb-8 lg:mb-16 font-light text-center text-gray-500 dark:text-gray-400 sm:text-xl"
+        >
+          Got a technical issue? Want to send feedback about a beta feature?
+          Need details about our Business plan? Let us know.
+        </p>
+        <form action="#" class="space-y-8">
+          <div>
+            <label
+              for="email"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Your email</label
+            >
+            <input
+              type="email"
+              id="email"
+              class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="name@flowbite.com"
+              required
+            />
+          </div>
+          <div>
+            <label
+              for="subject"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-300"
+              >Subject</label
+            >
+            <input
+              type="text"
+              id="subject"
+              class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+              placeholder="Let us know how we can help you"
+              required
+            />
+          </div>
+          <div class="sm:col-span-2">
+            <label
+              for="message"
+              class="block mb-2 text-sm font-medium text-gray-900 dark:text-gray-400"
+              >Your message</label
+            >
+            <textarea
+              id="message"
+              rows="6"
+              class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+              placeholder="Leave a comment..."
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            class="bg-[#1D232C] text-white px-6 py-3 rounded-xl text-lg font-semibold hover:bg-[#343b44] transition duration-300 ease-in-out"
+          >
+            Submit
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- This is the footer section -->
+    <footer class="w-full bg-[#1f2630] text-gray-200 py-12 px-4 sm:px-8">
+      <div class="max-w-5xl text-left">
+        <h2 class="text-4xl sm:text-5xl font-bold mb-4">Nostra</h2>
+
+        <p class="max-w-2xl text-lg leading-relaxed mb-6">
+          The standard chunk of Lorem Ipsum used since the 1500s is reproduced
+          below for those interested.
+        </p>
+
+        <div class="flex gap-6 text-2xl mb-6">
+          <i
+            class="fa-brands fa-instagram hover:text-gray-400 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-twitter hover:text-gray-400 cursor-pointer"
+          ></i>
+          <i
+            class="fa-brands fa-facebook-f hover:text-gray-400 cursor-pointer"
+          ></i>
+        </div>
+
+        <p class="text-sm text-gray-400">@ 2023 Nostra.com</p>
+      </div>
+    </footer>
+
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const closeBtn = document.getElementById("close-btn");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      menuToggle.addEventListener("click", () => {
+        mobileMenu.classList.remove("translate-x-full");
+      });
+
+      closeBtn.addEventListener("click", () => {
+        mobileMenu.classList.add("translate-x-full");
+      });
+
+      // Optional: Close mobile menu when a link is clicked
+      document.querySelectorAll("#mobileMenu a").forEach((link) => {
+        link.addEventListener("click", () => {
+          mobileMenu.classList.add("translate-x-full");
+        });
+      });
+    </script>
+  </body>
+</html>

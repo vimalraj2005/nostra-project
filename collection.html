@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collections</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- This is the advertisement section -->
+    <div class="advertisement">
+      <p class="advertisement-message">
+        Sign Up and <span class="advertisement_span">GET 20% OFF</span> for your
+        first Order
+      </p>
+      <p class="advertisement-close">X</p>
+    </div>
+
+    <!-- This is the navbar section -->
+    <nav class="Navbar">
+      <h2 class="Navbar__name">Nostra</h2>
+
+      <!-- burger -->
+      <div class="menu-toggle">
+        <i class="fa-solid fa-bars" id="menu-toggle"></i>
+      </div>
+
+      <!-- slide‑out panel -->
+      <div class="Navbar_sections" id="mobileMenu">
+        <i class="fa-solid fa-xmark" id="close-btn"></i>
+        <a href="index.html">Home</a>
+        <a href="collection.html">Collections</a>
+        <a href="contact.html">Contact&nbsp;Us</a>
+      </div>
+    </nav>
+
+    <div class="search-wrapper">
+      <input id="searchBar" type="text" placeholder="Search products…" />
+      <i class="fa-solid fa-magnifying-glass"></i>
+      
+    </div>
+    <div class="container">
+      <!-- Filter Sidebar -->
+      <aside class="filter-sidebar">
+        <div class="filter-group">
+          <h2>Occasion</h2>
+          <label><input type="checkbox" /> Summer</label>
+          <label><input type="checkbox" /> Party</label>
+          <label><input type="checkbox" /> Beach</label>
+        </div>
+
+        <div class="filter-group">
+          <h2>Colors</h2>
+          <label><input type="checkbox" /> Red</label>
+          <label><input type="checkbox" /> Blue</label>
+          <label><input type="checkbox" /> White</label>
+          <label><input type="checkbox" /> Green</label>
+        </div>
+
+        <div class="filter-group">
+          <h2>Arrivals</h2>
+          <label><input type="checkbox" /> New</label>
+          <label><input type="checkbox" /> Old</label>
+        </div>
+      </aside>
+
+      <!-- Product Grid -->
+
+      <main class="product-grid">
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt1.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt2.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt3.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt4.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt5.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt6.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt7.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt8.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt9.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt10.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt2.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt3.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt4.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div class="product-card">
+          <img src="/images/shirt5.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt6.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt7.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt8.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt9.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt10.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt2.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt3.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt5.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt6.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt10.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt1.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt2.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt3.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt4.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt7.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt10.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt7.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt2.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Party Floral Shirt"
+          data-occasion="party"
+          data-color="red"
+          data-arrival="old"
+        >
+          <img src="/images/shirt3.jpg" alt="Party Floral Shirt" />
+          <h3>Party Floral Shirt</h3>
+          <p>₹399</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Floral Summer Shirt"
+          data-occasion="summer"
+          data-color="yellow"
+          data-arrival="new"
+        >
+          <img src="/images/shirt9.jpg" alt="Floral Summer Shirt" />
+          <h3>Floral Summer Shirt</h3>
+          <p>₹220</p>
+        </div>
+        <div
+          class="product-card"
+          data-title="Summer Green"
+          data-occasion="summer"
+          data-color="green"
+          data-arrival="new"
+        >
+          <img src="/images/shirt8.jpg" alt="Summer Green" />
+          <h3>Summer Green</h3>
+          <p>₹260</p>
+        </div>
+      </main>
+    </div>
+
+    <footer class="footer">
+        <h2>Nostra</h2>
+        <p>
+          The Standard chunk of Lorem ipsum used since the 1500s is reproduced below for those interest
+        </p>
+      
+        <div class="social-icons">
+          <i class="fa-brands fa-instagram"></i>
+          <i class="fa-brands fa-twitter"></i>
+          <i class="fa-brands fa-facebook-f"></i>
+        </div>
+      
+        <p class="copyright">@ 2023 Nostra.com</p>
+      </footer>
+      
+
+    <script src="filter.js"></script>
+  </body>
+</html>
